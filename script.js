@@ -66,6 +66,7 @@ function game() {
     })
 
     btnClear.addEventListener('click', () => {
+        roundNumber.textContent = '';
         choice.textContent = '';
         finalResult.textContent = '';
         result = '';
