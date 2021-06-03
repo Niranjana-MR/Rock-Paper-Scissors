@@ -2,7 +2,7 @@
 
 This is a simple implementation of grade-school classic “rock paper scissors”. 
 
-It consists of 5 rounds where you play against the computer. Go on, try playing :D 
+It consists of 5 rounds where you play against the computer. Go on, try playing :D <br>
 Live preview: https://niranjana-mr.github.io/Rock-Paper-Scissors/
 
 
