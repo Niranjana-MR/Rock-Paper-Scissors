@@ -39,8 +39,9 @@ function game() {
         finalResult.textContent = '';
         result = playRound('rock', computerPlay());
         playerScore = calcScore(result, playerScore);
+        roundNumber.textContent = 'Round ' + counter;
         choice.textContent = 'You played Rock...';
-        score.textContent = 'Your Score : ' + playerScore + '\nRounds: ' + counter;
+        score.textContent = 'Your Score : ' + playerScore;
         counter = checkCounter(counter);
     });
 
@@ -48,8 +49,9 @@ function game() {
         finalResult.textContent = '';
         result = playRound('paper', computerPlay());
         playerScore = calcScore(result, playerScore);
+        roundNumber.textContent = 'Round ' + counter;
         choice.textContent = 'You played Paper...';
-        score.textContent = 'Your Score : ' + playerScore + '\nRounds: ' + counter;
+        score.textContent = 'Your Score : ' + playerScore;
         counter = checkCounter(counter);
     });
 
@@ -57,8 +59,9 @@ function game() {
         finalResult.textContent = '';
         result = playRound('scissors', computerPlay());
         playerScore = calcScore(result, playerScore);
+        roundNumber.textContent = 'Round ' + counter;
         choice.textContent = 'You played Scissors...';
-        score.textContent = 'Your Score : ' + playerScore + '\nRounds: ' + counter;
+        score.textContent = 'Your Score : ' + playerScore;
         counter = checkCounter(counter);
     })
 
