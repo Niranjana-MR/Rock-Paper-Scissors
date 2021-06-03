@@ -1,0 +1,72 @@
+body {
+    background-color: #1D1C1B;
+}
+
+#container {
+    background-color: #1D1C1B;
+}
+
+h2 {
+    font-family: 'Audiowide', cursive;
+    display: flex;
+    justify-content: center;
+    color: beige;
+    font-size: 48px;
+}
+
+img {
+    width: 60%;
+    background-color: beige;
+}
+
+button {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 50px;
+    background-color: beige;
+    border-radius: 18px;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+#clear {
+    font-size: 28px;
+    padding: 10px;
+    width: 250px;
+    border-radius: 14px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.center{
+    display: flex;
+justify-content: center;
+}
+
+.message {
+    color: beige;
+    font-size: 18px;
+}
+
+.score{
+    color: beige;
+    font-size: 16px;
+}
+
+.result {
+    color: beige;
+    font-size: 24px;
+}
+
+footer {
+    bottom: 0;
+    color: beige;
+    position: fixed;
+}
+
+a {
+    color: beige;
+}

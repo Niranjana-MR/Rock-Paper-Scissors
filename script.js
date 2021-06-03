@@ -6,12 +6,15 @@ const btnClear = document.querySelector('#clear');
 const container = document.querySelector('#container');
 
 const message = document.createElement('div');
+message.classList.add('message');
 container.appendChild(message);
 
 const score = document.createElement('div');
+score.classList.add('score');
 container.appendChild(score);
 
 const finalResult = document.createElement('h4');
+finalResult.classList.add('result');
 container.appendChild(finalResult);
 
 let playerScore = 0;
