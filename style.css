@@ -30,7 +30,7 @@ a {
 }
 
 h2 {
-    font-family: 'Audiowide', cursive;
+    font-family: 'Audiowide', Georgia ;
     display: flex;
     justify-content: center;
     color: beige;
@@ -39,7 +39,7 @@ h2 {
 }
 
 h4{
-    font-family: 'Audiowide', cursive;
+    font-family: 'Audiowide', Georgia ;
     display: flex;
     justify-content: center;
     color: beige;
@@ -100,7 +100,7 @@ button:hover {
         align-items: center;
     }
     h4{
-        font-family: 'Audiowide', cursive;
+        font-family: 'Audiowide', Georgia ;
         display: flex;
         justify-content: center;
         color: beige;
@@ -140,7 +140,7 @@ button:hover {
 @media only screen and (max-width: 806px) {
 
     h2 {
-        font-family: 'Audiowide', cursive;
+        font-family: 'Audiowide', Georgia ;
         display: flex;
         justify-content: center;
         color: beige;
@@ -151,7 +151,7 @@ button:hover {
         margin-left: 10%;
     }
     h4{
-        font-family: 'Audiowide', cursive;
+        font-family: 'Audiowide', Georgia ;
         display: flex;
         justify-content: center;
         color: beige;
