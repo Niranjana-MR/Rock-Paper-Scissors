@@ -3,19 +3,31 @@ const btnPaper = document.querySelector('#paper');
 const btnScissors = document.querySelector('#scissors');
 const btnClear = document.querySelector('#clear');
 
-const container = document.querySelector('#container');
+const container = document.querySelector('#resultContainer');
+
+const subContainer = document.createElement('div');
+subContainer.classList.add('display');
+container.appendChild(subContainer);
+
+const roundNumber = document.createElement('h4');
+roundNumber.classList.add('display');
+subContainer.appendChild(roundNumber);
+
+const choice = document.createElement('div');
+choice.classList.add('display');
+subContainer.appendChild(choice);
 
 const message = document.createElement('div');
-message.classList.add('message');
-container.appendChild(message);
+message.classList.add('display');
+subContainer.appendChild(message);
 
 const score = document.createElement('div');
-score.classList.add('score');
-container.appendChild(score);
+score.classList.add('display');
+subContainer.appendChild(score);
 
 const finalResult = document.createElement('h4');
-finalResult.classList.add('result');
-container.appendChild(finalResult);
+finalResult.classList.add('display');
+subContainer.appendChild(finalResult);
 
 let playerScore = 0;
 
@@ -27,15 +39,17 @@ function game() {
         finalResult.textContent = '';
         result = playRound('rock', computerPlay());
         playerScore = calcScore(result, playerScore);
-        score.textContent = playerScore + '/' + counter;
-        counter =  checkCounter(counter);
+        choice.textContent = 'You played Rock...';
+        score.textContent = 'Your Score : ' + playerScore + '\nRounds: ' + counter;
+        counter = checkCounter(counter);
     });
 
     btnPaper.addEventListener('click', () => {
         finalResult.textContent = '';
         result = playRound('paper', computerPlay());
         playerScore = calcScore(result, playerScore);
-        score.textContent = playerScore + '/' + counter;
+        choice.textContent = 'You played Paper...';
+        score.textContent = 'Your Score : ' + playerScore + '\nRounds: ' + counter;
         counter = checkCounter(counter);
     });
 
@@ -43,11 +57,13 @@ function game() {
         finalResult.textContent = '';
         result = playRound('scissors', computerPlay());
         playerScore = calcScore(result, playerScore);
-        score.textContent = playerScore + '/' + counter;
+        choice.textContent = 'You played Scissors...';
+        score.textContent = 'Your Score : ' + playerScore + '\nRounds: ' + counter;
         counter = checkCounter(counter);
     })
 
-    btnClear.addEventListener('click', ()=>{
+    btnClear.addEventListener('click', () => {
+        choice.textContent = '';
         finalResult.textContent = '';
         result = '';
         score.textContent = '';
@@ -57,25 +73,23 @@ function game() {
     })
 }
 
-function checkCounter(count){
-    if(count < 5){
+function checkCounter(count) {
+    if (count < 5) {
         count += 1;
         return count;
-    }
-    else{
+    } else {
         showResult(playerScore);
         return 1;
     }
 }
 
 //Display final result
-function showResult(finalScore){
-    if(finalScore>2){
-        finalResult.textContent = 'player wins';
+function showResult(finalScore) {
+    if (finalScore > 2) {
+        finalResult.textContent = 'Hurray... You win :)';
         playerScore = 0;
-    }
-    else{
-        finalResult.textContent = 'player loses'
+    } else {
+        finalResult.textContent = 'Oops... You Lose :('
         playerScore = 0;
     }
 }
