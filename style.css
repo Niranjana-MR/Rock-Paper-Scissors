@@ -39,14 +39,12 @@ h2 {
 }
 
 img {
-    width: 250px;
+    width: 150px;
     background-color: beige;
 }
 
 button {
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-top: 30px;
+    margin: 30px 20px 20px 20px;
     background-color: beige;
     border-radius: 18px;
 }
@@ -58,7 +56,7 @@ button:hover {
 #clear {
     font-size: 28px;
     padding: 10px;
-    width: 250px;
+    width: 185px;
     border-radius: 14px;
     display: flex;
     align-content: center;
@@ -80,23 +78,19 @@ button:hover {
     align-items: center;
 }
 
-
 @media only screen and (max-width: 460px) {
 
     h2 {
-        font-family: 'Audiowide', cursive;
-        display: flex;
         justify-content: center;
         color: beige;
-        font-size: 32px;
+        font-size: 24px;
         align-content: center;
         display: flex;
         align-items: center;
-        margin-left: 10%;
     }
 
     img {
-        width: 75px;
+        width: 45px;
         background-color: beige;
     }
 
@@ -126,7 +120,6 @@ button:hover {
         position: fixed;
     }
 }
-
 @media only screen and (max-width: 806px) {
 
     h2 {
@@ -142,14 +135,14 @@ button:hover {
     }
 
     img {
-        width: 150px;
+        width: 100px;
         background-color: beige;
     }
 
     .clear {
         font-size: 18px;
         padding: 10px;
-        width: 200px;
+        width: 95px;
         border-radius: 14px;
         display: flex;
         align-content: center;
@@ -158,7 +151,7 @@ button:hover {
 
     .display {
         color: beige;
-        font-size: 12px;
+        font-size: 18px;
         display: flex;
         margin-bottom: 15px;
         flex-direction: column;
